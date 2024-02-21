@@ -2,7 +2,6 @@
 from math import sqrt
 from math import atan
 from math import acos
-from math import cos
 
 coo_cart_x=float(input('Ingrese la coordenada x: '))
 coo_cart_y=float(input('Ingrese la coordenada y: '))
@@ -30,12 +29,3 @@ print('Esfericas: ')
 print('radio: ',radio_e)
 print('angulo tehta: ',tetha_e )
 print('angulo phi: ',phi)
-
-#punto 4
-temp=float(input('ingrese valor de la temperatura: '))
-
-res=100*(1+(temp*0.00385))
-print(res)
-
-
-print(cos(180/57.3))
