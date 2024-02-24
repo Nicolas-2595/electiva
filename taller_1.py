@@ -1,5 +1,5 @@
 #punto 1
-import numpy as  np
+import numpy as np
 import numpy.linalg as lg
 vector_1=[]
 vector_2=[]

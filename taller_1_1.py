@@ -1,0 +1,46 @@
+#punto 1
+import numpy as np
+
+vector_1=[]
+vector_2=[]
+vector_suma=[]
+vector_resta=[]
+vector_punto=[]
+vector_division=[]
+
+a=int(input('Ingrese el tamaño del vector: '))
+
+#vector 1
+for i in range(0,a):
+    b=float(input('ingrese el valor '+str(i+1)+' para el primer vector :'))
+    vector_1.append(b)
+
+#vector 2
+for i in range(0,a):
+    b=float(input('ingrese el valor '+str(i+1)+' para el segundo vector :'))
+    vector_2.append(b)
+
+print('vector 1: ',vector_1)
+print('vector 2: ',vector_2)
+
+#suma de vectores'
+for i in range(0,a):
+    vector_suma.append(vector_1[i]+vector_2[i])
+
+#resta de vectores
+for i in range(0,a):
+    vector_resta.append(vector_1[i]-vector_2[i])
+
+#producto punto
+for i in range(0,a):
+    vector_punto.append(vector_1[i]*vector_2[i])
+
+#division de vectores
+for i in range(0,a):
+    vector_division.append(vector_1[i]/vector_2[i])
+
+print('vector suma: ',vector_suma)
+print('vector resta: ',vector_resta)
+print('producto punto: ',sum(vector_punto))
+print('producto cruz: ', np.cross(vector_1,vector_2))
+print('vector division',vector_division)
