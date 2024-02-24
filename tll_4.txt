@@ -1,0 +1,11 @@
+#punto 4
+temp=float(input('ingrese valor de la temperatura: '))
+
+
+if temp<0:
+    res=(1+(0.0039*temp)+(-0.0000005775*(temp**2)))*100
+    print(res,' Ohms')
+
+elif temp>=0:
+    res=(1+(0.0039*temp)+(-0.0000005775*(temp**2))+(-0.000000000004183*(temp**3)))*100
+    print(res,' Ohms')

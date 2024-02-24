@@ -1,0 +1,19 @@
+#punto 6
+from math import pi
+
+dia_vastago_usuario=float(input('ingrese el diametro del vastago (en mm): '))
+dia_embolo_usuario=float(input('ingrese el diametro del embolo (en mm): '))
+p_trabajo_usuario=float(input('ingrese el valor de presion de trabajo (en atm): '))
+
+dia_vas_si=dia_vastago_usuario/1000
+dia_emb_si=dia_embolo_usuario/1000
+p_tra_si=p_trabajo_usuario*100000
+
+sup_emb=(pi*(dia_emb_si**2))/4
+sup_vas=(pi*(dia_vas_si**2))/4
+
+F_avan=p_tra_si*sup_emb
+F_retr=p_tra_si*(sup_emb-sup_vas)
+
+print('fuerza de avance: ',F_avan,' N')
+print('fuerza de retroceso: ',F_retr,' N')
